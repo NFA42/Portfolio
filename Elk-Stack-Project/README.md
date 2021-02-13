@@ -69,7 +69,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
 | Web 1    | Web Server | 10.0.0.9  | Linux                 |
 | Web 2    | Web Server | 10.0.0.10  | Linux                 |
-| Elk     | Centralized Logging      | 10.1.0.4 |  Linux                |
+| Elk     | Centralized Logging      | 10.1.0.4  | Linux                |
 
 ### Access Policies
 
@@ -93,16 +93,22 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- What is the main advantage of automating configuration with Ansible?
+  
+  The ability to perform administrative tasks in a single task, instead of having to update each server individually. 
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+
+In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc...
 - ...
 - ...
+- ...
+- ...
+- 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![docker_ps](C:\Users\nancy\OneDrive\Documents\Cyber Security Bootcamp\Portfolio\Elk-Stack-Project\Images)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -123,8 +129,11 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
+- _Which file is the playbook? yml 
+- Where do you copy it?_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
+Command to Restart: systemctl restart ssh
