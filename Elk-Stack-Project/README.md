@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+![Elk diagram](Images/Elk Diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the PLAYBOOK file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -54,32 +54,36 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly AVAILABLE, in addition to restricting ACCESS to the network.
-- _TODO: What aspect of security do load balancers protect? AVAILABILITY What is the advantage of a jump box?_ Protecting Webservers 1 & 2 from unauthorized SSH Login attempts. 
+Load balancing ensures that the application will be highly _AVAILABLE_, in addition to restricting _ACCESS_ to the network.
+- _What aspect of security do load balancers protect?_ AVAILABILITY 
+- _What is the advantage of a jump box?_ Protecting Webserver 1 & Webserver 2 from unauthorized SSH login attempts
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the CONFIGURATION and system USAGE.
-- _TODO: What does Filebeat watch for?_ Changes in files
-- _TODO: What does Metricbeat record?_ System and service metrics
-- 
+- _What does Filebeat watch for?_ Changes in the files
+- _What does Metricbeat record?_ System and service metrics
+
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.4   | Linux            |
+| Jump Box | Gateway    | 10.0.0.4  | Linux            |
 | Web 1    | Web Server | 10.0.0.9  | Linux                 |
-| Web 2    | Web Server | 10.0.0.10  | Linux                 |
-| Elk     | Centralized Logging      | 10.1.0.4  | Linux                |
+| Web 2    | Web Server | 10.0.0.10 | Linux                 |
+| Elk      | Centralized Logging | 10.1.0.4  | Linux  
+
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 67.87.160.237
+- 67.87.160.237 
 
 Machines within the network can only be accessed by the Jump Box.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address? My home computer, 67.87.160.237
+- _TODO: Which machine did you allow to access your ELK VM? What was its IP address? 
+  
+  My home computer, 67.87.160.237
 
 A summary of the access policies in place can be found in the table below.
 
@@ -108,7 +112,7 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![docker_ps](C:\Users\nancy\OneDrive\Documents\Cyber Security Bootcamp\Portfolio\Elk-Stack-Project\Images)
+![docker_ps](Images/docker_ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -136,4 +140,6 @@ _TODO: Answer the following questions to fill in the blanks:_
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
-Command to Restart: systemctl restart ssh
+- Command to Restart: systemctl restart ssh
+- Command to see all installed services: 
+  systemctl list-units  --type=service
