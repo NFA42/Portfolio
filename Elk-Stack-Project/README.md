@@ -125,7 +125,7 @@ We have installed the following Beats on these machines:
 These Beats allow us to collect the following information from each machine:
 
 In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. 
-- Filebeat monitors or logs specified files, collects log events and forwards them to Elk Stack. Filebeat can also be used to parse and visualize data.
+- Filebeat helps generate and organize log files to send to Logstash and Elasticsearch, including day and time stamps for any changes to the logs. Filebeat monitors and logs specified files, collects log events and forwards them to Elk Stack. Filebeat can also be used to parse and visualize data.
   
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
