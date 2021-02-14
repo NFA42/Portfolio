@@ -141,8 +141,3 @@ _Answer the following questions to fill in the blanks:_
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ It is specified in the hosts file Under Webservers and or Elk. 
 - Which URL do you navigate to in order to check that the ELK server is running? http://www.52.157.108.82:5601/setup.php
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-
-- Command to Restart: systemctl restart ssh
-- Command to see all installed services: 
-  systemctl list-units  --type=service
